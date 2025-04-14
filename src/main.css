@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
 
 @font-face {
-  font-family: "UthmaniHafs";
-  src: url("assets/fonts/uthmanic_hafs_v20.ttf");
+  font-family: Hafs;
+  src: url('assets/fonts/uthmanic_hafs_v20.ttf') format('truetype'),
+       url('assets/fonts/uthmanic_hafs_v20-webfont.woff') format('woff'),
+       url('assets/fonts/uthmanic_hafs_v20-webfont.woff2') format('woff2');
+
 }
 
 * {    
@@ -10,7 +13,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "Vazirmatn" !important;
+  font-family: "Vazirmatn";
   color: white;
 }
 
@@ -28,6 +31,7 @@ body {
   line-height: 1.5;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;;
 }
 
 
@@ -53,9 +57,13 @@ ul#navBar {
 .surahBlock {
   display: inline-block;
   width: 200px;
+  padding: 9px;
   height: 130px;
   border: solid white 2px;
+  border-radius: 9px;
   margin: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0,0.2);
 }
 
 hrSurah {
@@ -156,15 +164,22 @@ h1::after {
   display: inline-block;
   border: white solid 2px;
   border-radius:100%;
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
+  font-family: 'ui-serif','Georgia','Cambria','Times New Roman','Times','serif';
+  border-radius: 9999px;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0.35rem;
   text-align: center;
   vertical-align: center;
   margin-left: 5px;
 }
 
 .hafs {
-  font-size: larger;
-  font-family: "UthmaniHafs";
+  font-size: 2em;
+  font-family: 'Hafs';
+}
+
+.ayahNumber {
+  margin: 10px;
+  font-size: 1.7em;
 }
