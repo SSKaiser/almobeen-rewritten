@@ -23,3 +23,7 @@ export function toAr(num: number) {
     for (let j = 0; j<n.length;j++) i+=listAr[+n[j]]
     return i
 }
+
+export function Ayah({text}: {text: string}) {
+    return <><p className="hafs ayah">{text}</p><hr className="separateAyah"/></>
+}

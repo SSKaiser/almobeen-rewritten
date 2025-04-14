@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './main.css'
 import {NavItem} from './modules/elements'
-import {Page0, Page1, Page2} from './modules/pages'
+import {Page0, Page1, Page2, PageS} from './modules/pages'
 
 const page = window.location.pathname.split("/")[1];
 
@@ -20,7 +20,7 @@ function App() {
         </ul>
       </div>
       <div className="content">
-        {page === "s" || page === "" ? <Page0 />: page === "a" ? <Page1 /> : page==="i" ? <Page2 /> :+page <= 114 ? "" : "لقد حصل خطأ"}
+        {page === "s" || page === "" ? <Page0 />: page === "a" ? <Page1 /> : page==="i" ? <Page2 /> :+page <= 114 ? <PageS id={+page} /> : "لقد حصل خطأ"}
       </div>
     </>
   )
