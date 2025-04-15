@@ -59,15 +59,17 @@ ul#navBar {
   width: 200px;
   padding: 9px;
   height: 130px;
-  border: solid white 2px;
+  border: solid rgba(255,255,255,0.2) 1px;
   border-radius: 9px;
   margin: 10px;
   cursor: pointer;
   background-color: rgba(0, 0, 0,0.2);
 }
 
-hrSurah {
-  border: 2px solid white;
+.hrSurah {
+  height: 1px;
+  background-color: rgba(255,255,255,0.2);
+  border: none;
 }
 
 .block  {
@@ -162,7 +164,7 @@ h1::after {
 
 .surahId {
   display: inline-block;
-  border: white solid 2px;
+  border: white solid 1px;
   border-radius:100%;
   font-family: 'ui-serif','Georgia','Cambria','Times New Roman','Times','serif';
   border-radius: 9999px;
@@ -184,3 +186,58 @@ h1::after {
   font-size: 1.7em;
 }
 
+.pageNum {
+  font-family:  'ui-serif','Georgia','Cambria','Times New Roman','Times','serif';
+  font-size: 2em;
+  margin-top: 0.6em;
+  text-align: center;
+}
+.QuranText {
+  display: inline;
+  padding-left: 10px;
+}
+
+.page {
+  max-width: 50rem;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.2em;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 500px) {
+  .page {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 379px) {
+  .surahBlock{
+    width: 115px;
+    height: 90px;
+    margin: 3px;
+    padding: 6px;
+    word-wrap: none;
+    font-size: 0.65em;
+  }
+  .surahId {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 378px){
+  .surahBlock{
+    width: 200px;
+  }
+  .block{
+    padding: 0 40px 0px 0px;
+  }
+  
+  .surahId {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+}

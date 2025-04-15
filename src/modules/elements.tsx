@@ -4,12 +4,12 @@ const listAr = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩']
 const listAyat = surahInfos.map(f => f[1] as number)
 
 export function Surah({name, id}: {id: number; name: string}) {
-    return <div className='surahBlock'>
+    return <a className='surahBlock' href={"/"+id}>
       <div className='hafs'><p className="surahId">{toAr(id)}</p>{name}</div>
-      <hr className='brSurah hafs'/>
+      <hr className='hrSurah hafs'/>
       <div className='ayahNumber'>{toAr(listAyat[id-1])} آيات</div>
       <br/>
-    </div>
+    </a>
   }
   
   
@@ -24,6 +24,14 @@ export function toAr(num: number) {
     return i
 }
 
-export function Ayah({text}: {text: string}) {
-    return <><p className="hafs ayah">{text}</p><hr className="separateAyah"/></>
+export function Ayah({page}: {page: [number, string[]]}) {
+
+    const [pageNumber, ayatArray] = page;
+    let ayat = ayatArray.map(f => <span className="hafs QuranText">{f}</span>)
+    return (<>
+    <div className='block page' >
+    {ayat}<p className='pageNum'>{toAr(pageNumber)}</p>
+    </div>
+      
+    </>)
 }

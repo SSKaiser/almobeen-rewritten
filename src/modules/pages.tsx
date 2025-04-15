@@ -54,10 +54,6 @@ export function PageS({id}: {id:number}) {
     interface ayahperpage {
         [pageno: number] : any
     }
-    interface ayahperpageelem {
-        [pageno: number] : any
-    }
-    let ayatPerPageElem:ayahperpageelem = {}
     let ayatPerPage:ayahperpage = {}
     for (let ayah of ayat) {
         if (ayatPerPage[ayah.page] == undefined) {
@@ -68,8 +64,8 @@ export function PageS({id}: {id:number}) {
     }
 
     
-    let pages = ayat.map(f => <Ayah text={f.aya_text} key={f.id}/>);
-    return <div className="block">{pages}</div>
+    let pages = Object.keys(ayatPerPage).map(f => <Ayah page={[Number(f), ayatPerPage[Number(f)]]}/>)
+    return (<>{pages}</>)
 }
 /*
 Goal: make an element that takes an array in the form [page_no, [ayah, ayah, ...]]
