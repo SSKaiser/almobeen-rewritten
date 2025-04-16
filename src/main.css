@@ -8,6 +8,8 @@
 
 }
 
+@import "tailwindcss";
+
 * {    
   direction: rtl;
   margin: 0;
@@ -205,6 +207,13 @@ h1::after {
   text-align: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.basmala {
+    height: 3.5em;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media only screen and (max-width: 500px) {

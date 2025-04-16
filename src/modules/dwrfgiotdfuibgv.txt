@@ -1,0 +1,2 @@
+[{texte_surat1},<basmala /> {texte_surat2}] -> Page -> Pages
+

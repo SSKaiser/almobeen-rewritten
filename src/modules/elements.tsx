@@ -24,14 +24,6 @@ export function toAr(num: number) {
     return i
 }
 
-export function Ayah({page}: {page: [number, string[]]}) {
-
-    const [pageNumber, ayatArray] = page;
-    let ayat = ayatArray.map(f => <span className="hafs QuranText">{f}</span>)
-    return (<>
-    <div className='block page' >
-    {ayat}<p className='pageNum'>{toAr(pageNumber)}</p>
-    </div>
-      
-    </>)
+export function Ayah(props: {text: string}) {
+    return <p className='hafs QuranText'></p>    
 }
