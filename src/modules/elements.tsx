@@ -31,7 +31,3 @@ export function toAr(num: number) {
     for (let j = 0; j<n.length;j++) i+=listAr[+n[j]]
     return i
 }
-
-export function Ayah(props: {text: string}) {
-    return <p className='hafs QuranText'></p>    
-}

@@ -129,18 +129,19 @@ h1 {
   font-weight: 900;
   text-align: center;
 }
+@media only screen and (min-width: 762px)  {
+    h1::before,
+    h1::after {
+      content: "";
+      display: inline-block;
+      width: 25%;         /* Set your desired width here */
+      max-width: 200px;
+      height: 2px;         /* Thickness of the line */
+      background: white;   /* Line color */
+      vertical-align: middle;
+      margin: 0 10px;
+    }}
 
-h1::before,
-h1::after {
-  content: "";
-  display: inline-block;
-  width: 25%;         /* Set your desired width here */
-  max-width: 200px;
-  height: 2px;         /* Thickness of the line */
-  background: white;   /* Line color */
-  vertical-align: middle;
-  margin: 0 10px;
-}
 
 .selected {
   background-color: #fe4641;
@@ -183,14 +184,6 @@ h1::after {
 }
 
 @media only screen and (max-width: 576px) and (min-width: 379px) {
-  .surahBlock{
-    width: 115px;
-    height: 90px;
-    margin: 3px;
-    padding: 6px;
-    word-wrap: none;
-    font-size: 0.65em;
-  }
   .surahId {
     padding-left: 0.3rem;
     padding-right: 0.3rem;

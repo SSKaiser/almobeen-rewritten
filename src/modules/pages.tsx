@@ -55,7 +55,6 @@ export function Page1() {
 
 
 export function Page2() {
-    useScript("https://site.com/playerjs.js");
     return (
         <>
             <h1>هام</h1><br /><br />

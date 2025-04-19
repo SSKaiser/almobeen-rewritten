@@ -20,9 +20,9 @@ function putZeros(num: string) {
 
 if (+page <=114 ) {
     const audioname = putZeros(page)
-    player = <iframe className='fixed bottom-3 left-3 overflow-hidden w-[430px]' src={'/playerjs.html?file=src/assets/audio/surats/'+audioname+'.mp3'} />
+    player = <iframe className='fixed bottom-3 left-3 overflow-hidden max-w-[430px]' src={'/playerjs.html?file=src/assets/audio/surats/'+audioname+'.mp3'} />
 } else if (page.startsWith("j")) {
-    player = <iframe className='fixed bottom-3 left-3 overflow-hidden w-[430px]' src={'/playerjs.html?file=src/assets/audio/ajza/'+page.slice(1)+'.mp3'} />
+    player = <iframe className='fixed bottom-3 left-3 overflow-hidden max-w-[430px]' src={'/playerjs.html?file=src/assets/audio/ajza/'+page.slice(1)+'.mp3'} />
 } else {
     
 }
