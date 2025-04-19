@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
 
 @font-face {
@@ -8,14 +10,8 @@
 
 }
 
-@import "tailwindcss";
 
-* {    
-  direction: rtl;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-family: "Vazirmatn";
+* {
   color: white;
 }
 
@@ -33,7 +29,7 @@ body {
   line-height: 1.5;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
 }
 
 
@@ -55,26 +51,13 @@ ul#navBar {
   background-color: #0f0f0f;
 }
 
-
-.surahBlock {
-  display: inline-block;
-  width: 200px;
-  padding: 9px;
-  height: 130px;
-  border: solid rgba(255,255,255,0.2) 1px;
-  border-radius: 9px;
-  margin: 10px;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0,0.2);
-}
-
 .hrSurah {
   height: 1px;
   background-color: rgba(255,255,255,0.2);
   border: none;
 }
 
-.block  {
+.Block  {
   background-color: #1f2024;
   margin-bottom: 20px;
   padding: 0 40px 20px 20px;
@@ -164,20 +147,6 @@ h1::after {
   color: white !important;
 }
 
-.surahId {
-  display: inline-block;
-  border: white solid 1px;
-  border-radius:100%;
-  font-family: 'ui-serif','Georgia','Cambria','Times New Roman','Times','serif';
-  border-radius: 9999px;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-  padding-top: 0.35rem;
-  text-align: center;
-  vertical-align: center;
-  margin-left: 5px;
-}
-
 .hafs {
   font-size: 2em;
   font-family: 'Hafs';
@@ -199,21 +168,12 @@ h1::after {
   padding-left: 10px;
 }
 
-.page {
-  max-width: 50rem;
-  margin-right: auto;
-  margin-left: auto;
-  font-size: 1.2em;
-  text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.basmala {
-    height: 3.5em;
-    width: auto;
-    margin-right: auto;
-    margin-left: auto;
+#player {
+    position: fixed !important;
+    max-width: 400px !important;
+    bottom: 20px;
+	left: 20px;
+    z-index: 9999;
 }
 
 @media only screen and (max-width: 500px) {

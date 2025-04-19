@@ -1,0 +1,522 @@
+<script>
+	document.addEventListener('DOMContentLoaded', async function () {
+		
+
+    const links = document.querySelectorAll('a.post-cat');
+
+    
+    if (document.getElementsByClassName("post-cat")[0].innerHTML.includes("مؤسسة أجناد")) {
+        
+        var t = document.getElementsByClassName('post-title')[0].innerHTML
+        console.log(t)
+
+        var tt = t.trim()
+        var chapter;
+        switch (tt) {
+            case "001 – سورة الفاتحة":
+                chapter = 1;
+                audio = "001";
+                break;
+            case "002 – سورة البقرة":
+                chapter = 2;
+                audio = "002";
+                break;
+            case "003 – سورة آل عمران":
+                chapter = 3;
+                audio = "003";
+                break;
+            case "004 – سورة النساء":
+                chapter = 4;
+                audio = "004";
+                break;
+            case "005 – سورة المائدة":
+                chapter = 5;
+                audio = "005";
+                break;
+            case "006 – سورة الأنعام":
+                chapter = 6;
+                audio = "006";
+                break;
+            case "007 – سورة الأعراف":
+                chapter = 7;
+                audio = "007";
+                break;
+            case "008 – سورة الأنفال":
+                chapter = 8;
+                audio = "008";
+                break;
+            case "009 – سورة التوبة":
+                chapter = 9;
+                audio = "009";
+                break;
+            case "010 – سورة يونس":
+                chapter = 10;
+                audio = "010";
+                break;
+            case "011 – سورة هود":
+                chapter = 11;
+                audio = "011";
+                break;
+            case "012 – سورة يوسف":
+                chapter = 12;
+                audio = "012";
+                break;
+            case "013 – سورة الرعد":
+                chapter = 13;
+                audio = "013";
+                break;
+            case "014 – سورة إبراهيم":
+                chapter = 14;
+                audio = "014";
+                break;
+            case "015 – سورة الحجر":
+                chapter = 15;
+                audio = "015";
+                break;
+            case "016 – سورة النحل":
+                chapter = 16;
+                audio = "016";
+                break;
+            case "017 – سورة الإسراء":
+                chapter = 17;
+                audio = "017";
+                break;
+            case "018 – سورة الكهف":
+                chapter = 18;
+                audio = "018";
+                break;
+            case "019 – سورة مريم":
+                chapter = 19;
+                audio = "019";
+                break;
+            case "020 – سورة طه":
+                chapter = 20;
+                audio = "020";
+                break;
+            case "021 – سورة الأنبياء":
+                chapter = 21;
+                audio = "021";
+                break;
+            case "022 – سورة الحج":
+                chapter = 22;
+                audio = "022";
+                break;
+            case "023 – سورة المؤمنون":
+                chapter = 23;
+                audio = "023";
+                break;
+            case "024 – سورة النور":
+                chapter = 24;
+                audio = "024";
+                break;
+            case "025 – سورة الفرقان":
+                chapter = 25;
+                audio = "025";
+                break;
+            case "026 – سورة الشعراء":
+                chapter = 26;
+                audio = "026";
+                break;
+            case "027 – سورة النمل":
+                chapter = 27;
+                audio = "027";
+                break;
+            case "028 – سورة القصص":
+                chapter = 28;
+                audio = "028";
+                break;
+            case "029 – سورة العنكبوت":
+                chapter = 29;
+                audio = "029";
+                break;
+            case "030 – سورة الروم":
+                chapter = 30;
+                audio = "030";
+                break;
+            case "031 – سورة لقمان":
+                chapter = 31;
+                audio = "031";
+                break;
+            case "032 – سورة السجدة":
+                chapter = 32;
+                audio = "032";
+                break;
+            case "033 – سورة الأحزاب":
+                chapter = 33;
+                audio = "033";
+                break;
+            case "034 – سورة سبأ":
+                chapter = 34;
+                audio = "034";
+                break;
+            case "035 – سورة فاطر":
+                chapter = 35;
+                audio = "035";
+                break;
+            case "036 – سورة يس":
+                chapter = 36;
+                audio = "036";
+                break;
+            case "037 – سورة الصافات":
+                chapter = 37;
+                audio = "037";
+                break;
+            case "038 – سورة ص":
+                chapter = 38;
+                audio = "038";
+                break;
+            case "039 – سورة الزمر":
+                chapter = 39;
+                audio = "039";
+                break;
+            case "040 – سورة غافر":
+                chapter = 40;
+                audio = "040";
+                break;
+            case "041 – سورة فصلت":
+                chapter = 41;
+                audio = "041";
+                break;
+            case "042 – سورة الشورى":
+                chapter = 42;
+                audio = "042";
+                break;
+            case "043 – سورة الزخرف":
+                chapter = 43;
+                audio = "043";
+                break;
+            case "044 – سورة الدخان":
+                chapter = 44;
+                audio = "044";
+                break;
+            case "045 – سورة الجاثية":
+                chapter = 45;
+                audio = "045";
+                break;
+            case "046 – سورة الأحقاف":
+                chapter = 46;
+                audio = "046";
+                break;
+            case "047 – سورة محمد":
+                chapter = 47;
+                audio = "047";
+                break;
+            case "048 – سورة الفتح":
+                chapter = 48;
+                audio = "048";
+                break;
+            case "049 – سورة الحجرات":
+                chapter = 49;
+                audio = "049";
+                break;
+            case "050 – سورة ق":
+                chapter = 50;
+                audio = "050";
+                break;
+            case "051 – سورة الذاريات":
+                chapter = 51;
+                audio = "051";
+                break;
+            case "052 – سورة الطور":
+                chapter = 52;
+                audio = "052";
+                break;
+            case "053 – سورة النجم":
+                chapter = 53;
+                audio = "053";
+                break;
+            case "054 – سورة القمر":
+                chapter = 54;
+                audio = "054";
+                break;
+            case "055 – سورة الرحمن":
+                chapter = 55;
+                audio = "055";
+                break;
+            case "056 – سورة الواقعة":
+                chapter = 56;
+                audio = "056";
+                break;
+            case "057 – سورة الحديد":
+                chapter = 57;
+                audio = "057";
+                break;
+            case "058 – سورة المجادلة":
+                chapter = 58;
+                audio = "058";
+                break;
+            case "059 – سورة الحشر":
+                chapter = 59;
+                audio = "059";
+                break;
+            case "060 – سورة الممتحنة":
+                chapter = 60;
+                audio = "060";
+                break;
+            case "061 – سورة الصف":
+                chapter = 61;
+                audio = "061";
+                break;
+            case "062 – سورة الجمعة":
+                chapter = 62;
+                audio = "062";
+                break;
+            case "063 – سورة المنافقون":
+                chapter = 63;
+                audio = "063";
+                break;
+            case "064 – سورة التغابن":
+                chapter = 64;
+                audio = "064";
+                break;
+            case "065 – سورة الطلاق":
+                chapter = 65;
+                audio = "065";
+                break;
+            case "066 – سورة التحريم":
+                chapter = 66;
+                audio = "066";
+                break;
+            case "067 – سورة الملك":
+                chapter = 67;
+                audio = "067";
+                break;
+            case "068 – سورة القلم":
+                chapter = 68;
+                audio = "068";
+                break;
+            case "069 – سورة الحاقة":
+                chapter = 69;
+                audio = "069";
+                break;
+            case "070 – سورة المعارج":
+                chapter = 70;
+                audio = "070";
+                break;
+            case "071 – سورة نوح":
+                chapter = 71;
+                audio = "071";
+                break;
+            case "072 – سورة الجن":
+                chapter = 72;
+                audio = "072";
+                break;
+            case "073 – سورة المزمل":
+                chapter = 73;
+                audio = "073";
+                break;
+            case "074 – سورة المدثر":
+                chapter = 74;
+                audio = "074";
+                break;
+            case "075 – سورة القيامة":
+                chapter = 75;
+                audio = "075";
+                break;
+            case "076 – سورة الإنسان":
+                chapter = 76;
+                audio = "076";
+                break;
+            case "077 – سورة المرسلات":
+                chapter = 77;
+                audio = "077";
+                break;
+            case "078 – سورة النبأ":
+                chapter = 78;
+                audio = "078";
+                break;
+            case "079 – سورة النازعات":
+                chapter = 79;
+                audio = "079";
+                break;
+            case "080 – سورة عبس":
+                chapter = 80;
+                audio = "080";
+                break;
+            case "081 – سورة التكوير":
+                chapter = 81;
+                audio = "081";
+                break;
+            case "082 – سورة الانفطار":
+                chapter = 82;
+                audio = "082";
+                break;
+            case "083 – سورة المطففين":
+                chapter = 83;
+                audio = "083";
+                break;
+            case "084 – سورة الانشقاق":
+                chapter = 84;
+                audio = "084";
+                break;
+            case "085 – سورة البروج":
+                chapter = 85;
+                audio = "085";
+                break;
+            case "086 – سورة الطارق":
+                chapter = 86;
+                audio = "086";
+                break;
+            case "087 – سورة الأعلى":
+                chapter = 87;
+                audio = "087";
+                break;
+            case "088 – سورة الغاشية":
+                chapter = 88;
+                audio = "088";
+                break;
+            case "089 – سورة الفجر":
+                chapter = 89;
+                audio = "089";
+                break;
+            case "090 – سورة البلد":
+                chapter = 90;
+                audio = "090";
+                break;
+            case "091 – سورة الشمس":
+                chapter = 91;
+                audio = "091";
+                break;
+            case "092 – سورة الليل":
+                chapter = 92;
+                audio = "092";
+                break;
+            case "093 – سورة الضحى":
+                chapter = 93;
+                audio = "093";
+                break;
+            case "094 – سورة الشرح":
+                chapter = 94;
+                audio = "094";
+                break;
+            case "095 – سورة التين":
+                chapter = 95;
+                audio = "095";
+                break;
+            case "096 – سورة العلق":
+                chapter = 96;
+                audio = "096";
+                break;
+            case "097 – سورة القدر":
+                chapter = 97;
+                audio = "097";
+                break;
+            case "098 – سورة البينة":
+                chapter = 98;
+                audio = "098";
+                break;
+            case "099 – سورة الزلزلة":
+                chapter = 99;
+                audio = "099";
+                break;
+            case "100 – سورة العاديات":
+                chapter = 100;
+                audio = "100";
+                break;
+            case "101 – سورة القارعة":
+                chapter = 101;
+                audio = "101";
+                break;
+            case "102 – سورة التكاثر":
+                chapter = 102;
+                audio = "102";
+                break;
+            case "103 – سورة العصر":
+                chapter = 103;
+                audio = "103";
+                break;
+            case "104 – سورة الهمزة":
+                chapter = 104;
+                audio = "104";
+                break;
+            case "105 – سورة الفيل":
+                chapter = 105;
+                audio = "105";
+                break;
+            case "106 – سورة قريش":
+                chapter = 106;
+                audio = "106";
+                break;
+            case "107 – سورة الماعون":
+                chapter = 107;
+                audio = "107";
+                break;
+            case "108 – سورة الكوثر":
+                chapter = 108;
+                audio = "108";
+                break;
+            case "109 – سورة الكافرون":
+                chapter = 109;
+                audio = "109";
+                break;
+            case "110 – سورة النصر":
+                chapter = 110;
+                audio = "110";
+                break;
+            case "111 – سورة المسد":
+                chapter = 111;
+                audio = "111";
+                break;
+            case "112 – سورة الإخلاص":
+                chapter = 112;
+                audio = "112";
+                break;
+            case "113 – سورة الفلق":
+                chapter = 113;
+                audio = "113";
+                break;
+            case "114 – سورة الناس":
+                chapter = 114;
+                audio = "114";
+                break;
+            default:
+                chapter = 1;
+                audio = "001";
+                break;
+        }
+
+        var audiofile = `/wp-content/uploads/2024/08/${audio}.mp3`
+
+
+        var ver
+        // Fetching a specific Surah (Chapter) data
+        fetch(`/wp-content/uploads/2024/08/data.json`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("floatingDiv").hidden = false
+                var player = new Playerjs({ id: "player", file: audiofile});
+                for (let verse of data[chapter]){
+                    console.log(verse.verse_key)
+                    document.getElementsByClassName("entry-content")[0].innerHTML += `
+                    <div class="verse">
+                  
+                        <span style="float:right; font-family:p${verse.v2_page}" class="ayah">
+                            ${verse.code_v2}
+                        </span>
+                    </div>
+                    `
+                }
+
+                    document.getElementsByClassName("entry-content")[0].innerHTML += "<br><br><br><br><br><br>"
+
+            })
+
+
+                
+                
+
+    } else if (document.getElementsByClassName("post-cat")[0].innerHTML.includes("منوعة")) {
+        document.getElementById("floatingDiv").remove()
+        document.getElementById('index').innerHTML = '<br><div id="player" style="width: 60%; margin: auto;"></div>';
+        str = index.dataset.info.split('.')
+		if (parseInt(str[0]) >=100 && parseInt(str[0]) <=114 && str[1] == 'mp3') {
+            str = `${str[0]}-1.${str[1]}`.split('.')
+						console.log('done' + str[0]+'.'+str[1])
+        }
+        var player = new Playerjs({ id: "player", file: `/wp-content/uploads/2024/08/${str[0]}.${str[1]}`, poster: "/wp-content/uploads/2024/07/cropped-almubeen.png" });
+    }
+	links.forEach(link => {
+        link.remove()
+    });
+})
+</script>
